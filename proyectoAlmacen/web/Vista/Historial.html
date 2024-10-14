@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Módulo de Historial de Productos</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+         <link rel="stylesheet" href="../css/sidebar.css">
+    </head>
+    <body>
+        <div id="sidebar-container">
+            <div class="sidebar">
+                
+            </div>
+        </div>
+        <div class="content">
+            <div class="container mt-5">
+                <h1>Historial de Productos</h1>
+                <label for="tipoMovimiento">Filtrar por tipo de movimiento:</label>
+                <select id="tipoMovimiento">
+                    <option value="">Todos</option>
+                    <option value="entrada">Entrada</option>
+                    <option value="salida">Salida</option>
+                    <option value="Ingreso">Ingreso</option>
+                </select>
+                 <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                           
+                            <th>Tipo de movimiento</th>
+                            <th>Gafette</th>
+                            <th>Nombre</th>
+                            <th>apellido</th>
+                            <th>Nombre producto</th>
+                            <th>Cantidad anterior</th>
+                            <th>Cantidad nueva</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí irán las filas de productos -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal para agregar nuevo producto -->
+          
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="../JS/sidebar.js"></script>
+        <script src="../JS/Historial.js"></script>
+    </body>
+</html>

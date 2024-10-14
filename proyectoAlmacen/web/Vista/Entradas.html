@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Módulo de Entradas de Productos</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/sidebar.css">
+
+    </head>
+    <body>
+        <div id="sidebar-container">
+            <div class="sidebar">
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="container mt-5">
+                <h1>Entradas de Productos</h1>
+                 <button id="addProductButton" type="button" class="btn btn-primary mb-3">
+                    Agregar Nuevo Producto
+                </button>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="display:none;">idProducto</th>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                            <th>Proveedor</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Estatus</th>         
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal para agregar nuevo producto -->
+            <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="addProductModalLabel">Agregar Nuevo Producto</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="addProductForm">
+                                <div class="form-group">
+                                    <label for="productName">Nombre del Producto</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="productCategory">Tipo</label>
+                                    <input type="text" class="form-control" id="tipo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="productSupplier">Proveedor</label>
+                                    <input type="text" class="form-control" id="proveedor" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="productPrice">Precio</label>
+                                    <input type="number" class="form-control" id="precio" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="productQuantity">Cantidad</label>
+                                    <input type="number" class="form-control" id="cantidad" required>
+                                </div>                                                                                                        
+                                <button type="submit" class="btn btn-primary">Guardar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>       
+        <script src="../JS/sidebar.js"></script>
+        <script src="../JS/Entrada.js"></script>
+    </body>
+
+</html>
+
